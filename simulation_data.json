@@ -1,0 +1,18 @@
+{
+     "PIR": {
+          "carsServiced": "3328",
+          "simulationTime": 3600,
+          "AWT": 195.767
+     },
+     "Camera": {
+          "carsServiced": "3828",
+          "simulationTime": 3600,
+          "AWT": 158.467
+     },
+     "Antenna": {
+          "EastToWest": 2042,
+          "NorthToSouth": 2225,
+          "AWT": 115.833,
+          "carsServiced": 4267
+     }
+}

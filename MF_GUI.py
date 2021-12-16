@@ -2,19 +2,19 @@
 @author: Marcos Tulio Fermin Lopez
 """
 
-import time
-import pygame
 import sys
-import plotter
-import MF_Simulation_PIR as pir
-import MF_Simulation_Camera as cam
-import MF_Simulation_Antenna as ant
+import time
 
+import pygame
+
+import MF_Simulation_Antenna as ant
+import MF_Simulation_Camera as cam
+import MF_Simulation_PIR as pir
+import plotter
 
 """ This Module creates a basic GUI to interact with the project files.
     It allows to run each technology simulation (individually)
     and plot the generated data from a single window. """
-
 
 ################################################################################
 # Initial Parameters
@@ -28,43 +28,41 @@ SCREEN_WIDTH = 1400
 SCREEN_HEIGHT = 922
 
 # Loads the GUI backgounds and scales them to the screen dimentions
-bg1 = pygame.image.load('images/menu/main1.jpg')
+bg1 = pygame.image.load("images/menu/main1.jpg")
 bg1 = pygame.transform.smoothscale(bg1, (1400, 922))
-bg2 = pygame.image.load('images/menu/main2.jpeg')
+bg2 = pygame.image.load("images/menu/main2.jpeg")
 bg2 = pygame.transform.smoothscale(bg2, (1400, 922))
 
 # Set the screen mode
 state = 0
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
 clock = pygame.time.Clock()  # Initializes clock
-screen_mode = 'title'   # Modes: title, menu
-
+screen_mode = "title"  # Modes: title, menu
 
 ################################################################################
 # Title screen components
 ################################################################################
-
 """ Title Screen text """
 # Define the font used for the title screen surface
-title_font = pygame.font.SysFont('impact', 50)
+title_font = pygame.font.SysFont("impact", 50)
 # Render the simulation title surface
 title_surface = title_font.render(
     "Marcos Fermin's Dynamic Traffic Lights Simulator", True, (255, 255, 255))
 # Window Caption
 pygame.display.set_caption(
-    "Marcos Fermin's Dynamic Traffic Lights Simulator - EE Capstone Project - Fall 2021")
+    "Marcos Fermin's Dynamic Traffic Lights Simulator - EE Capstone Project - Fall 2021"
+)
 
 # Create the button boxes font
-box_font = pygame.font.SysFont('arial', 50)
+box_font = pygame.font.SysFont("arial", 50)
 
 # Render the menu surface buttons
-menu_surface = box_font.render('Menu', True, (255, 255, 255))
-quit_surface = box_font.render('Quit', True, (255, 255, 255))
-cam_surface = box_font.render('Camera', True, (255, 255, 255))
-PIR_surface = box_font.render('PIR', True, (255, 255, 255))
-Antenna_surface = box_font.render('Antenna', True, (255, 255, 255))
-Plot_surface = box_font.render('Plot Data', True, (255, 255, 255))
-
+menu_surface = box_font.render("Menu", True, (255, 255, 255))
+quit_surface = box_font.render("Quit", True, (255, 255, 255))
+cam_surface = box_font.render("Camera", True, (255, 255, 255))
+PIR_surface = box_font.render("PIR", True, (255, 255, 255))
+Antenna_surface = box_font.render("Antenna", True, (255, 255, 255))
+Plot_surface = box_font.render("Plot Data", True, (255, 255, 255))
 
 # Create the rings around the buttons
 ring1 = pygame.Rect(590, 480, 120, 70)  # Ring position as a rectangle
@@ -92,7 +90,6 @@ red = (255, 0, 0)
 # Array of rings and circles
 ringArr = [ring1, ring2, ring3, ring4, ring5, ring6]
 clrArr = [clr1, clr2, clr3, clr4, clr5, clr6]
-
 
 ################################################################################
 # Game Loop
@@ -122,7 +119,7 @@ while run:
             run = False  # Kill the game
             sys.exit()
             pygame.quit()
-            print('\nShutting down the game')
+            print("\nShutting down the game")
 
     # Rings
     if state == 0:
@@ -163,29 +160,35 @@ while run:
         clr6 = red
 
     # Click detection. Prints which technology simulation was selected
-    if pygame.mouse.get_pressed()[0] and ring3.collidepoint(pygame.mouse.get_pos()) and state == 1:
-        print('Camera Button Pressed')
+    if (pygame.mouse.get_pressed()[0]
+            and ring3.collidepoint(pygame.mouse.get_pos()) and state == 1):
+        print("Camera Button Pressed")
         cam.main()
 
-    if pygame.mouse.get_pressed()[0] and ring4.collidepoint(pygame.mouse.get_pos()) and state == 1:
-        print('PIR Button Pressed')
+    if (pygame.mouse.get_pressed()[0]
+            and ring4.collidepoint(pygame.mouse.get_pos()) and state == 1):
+        print("PIR Button Pressed")
         pir.main()
 
-    if pygame.mouse.get_pressed()[0] and ring5.collidepoint(pygame.mouse.get_pos()) and state == 1:
+    if (pygame.mouse.get_pressed()[0]
+            and ring5.collidepoint(pygame.mouse.get_pos()) and state == 1):
         plotter.plot_all()
 
-    if pygame.mouse.get_pressed()[0] and ring6.collidepoint(pygame.mouse.get_pos()) and state == 1:
-        print('Antenna Button Pressed')
+    if (pygame.mouse.get_pressed()[0]
+            and ring6.collidepoint(pygame.mouse.get_pos()) and state == 1):
+        print("Antenna Button Pressed")
         ant.main()
 
     # Quit if quit button is pressed
-    if pygame.mouse.get_pressed()[0] and ring2.collidepoint(pygame.mouse.get_pos()):
+    if pygame.mouse.get_pressed()[0] and ring2.collidepoint(
+            pygame.mouse.get_pos()):
         run = False
         sys.exit()
         pygame.quit()
 
     # Checks if any button is pressed and waits to update state
-    if pygame.mouse.get_pressed()[0] and ring1.collidepoint(pygame.mouse.get_pos()):
+    if pygame.mouse.get_pressed()[0] and ring1.collidepoint(
+            pygame.mouse.get_pos()):
         state = 1
         time.sleep(0.5)
 

@@ -18,16 +18,16 @@ def get_traffic_maker():
     HEIGHT = 922
     BACK_COLOR = (0, 0, 0)
 
-    default_road = pygame.image.load('images/roads/road1.jpg')
+    default_road = pygame.image.load("images/roads/road1.jpg")
     default_road = pygame.transform.smoothscale(default_road, (1400, 922))
 
-    light_road = pygame.image.load('images/roads/road2.jpg')
+    light_road = pygame.image.load("images/roads/road2.jpg")
     light_road = pygame.transform.smoothscale(light_road, (1400, 922))
 
-    medium_road = pygame.image.load('images/roads/road3.jpg')
+    medium_road = pygame.image.load("images/roads/road3.jpg")
     medium_road = pygame.transform.smoothscale(medium_road, (1400, 922))
 
-    heavy_road = pygame.image.load('images/roads/road4.jpg')
+    heavy_road = pygame.image.load("images/roads/road4.jpg")
     heavy_road = pygame.transform.smoothscale(heavy_road, (1400, 922))
 
     ring3 = pygame.Rect(600, 290, 220, 70)
@@ -40,7 +40,9 @@ def get_traffic_maker():
     clr5 = (255, 0, 0)
 
     # -------------------Texts---------------------------------
-    table_font = pygame.font.SysFont('timesnewroman', 25, bold=pygame.font.Font.bold)
+    table_font = pygame.font.SysFont("timesnewroman",
+                                     25,
+                                     bold=pygame.font.Font.bold)
 
     light = table_font.render("Light Traffic", True, (255, 255, 255))
     medium = table_font.render("Medium Traffic", True, (255, 255, 255))
@@ -92,20 +94,23 @@ def get_traffic_maker():
         screen.blit(medium, (620, 440))
         screen.blit(heavy, (630, 570))
 
-        if pygame.mouse.get_pressed()[0] and ring3.collidepoint(pygame.mouse.get_pos()):
-            print('light tapped')
+        if pygame.mouse.get_pressed()[0] and ring3.collidepoint(
+                pygame.mouse.get_pos()):
+            print("light tapped")
             return light_traffic
-        if pygame.mouse.get_pressed()[0] and ring4.collidepoint(pygame.mouse.get_pos()):
-            print('medium tapped')
+        if pygame.mouse.get_pressed()[0] and ring4.collidepoint(
+                pygame.mouse.get_pos()):
+            print("medium tapped")
             return medium_traffic
-        if pygame.mouse.get_pressed()[0] and ring5.collidepoint(pygame.mouse.get_pos()):
-            print('heavy tapped')
+        if pygame.mouse.get_pressed()[0] and ring5.collidepoint(
+                pygame.mouse.get_pos()):
+            print("heavy tapped")
             return heavy_traffic
 
         pygame.display.flip()
         Clock.tick(60)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     #    pass
     get_traffic_maker()

@@ -1,4 +1,4 @@
-# Dynamic-Traffic-Lights-Simulation
+# Dynamic Traffic Lights Management System Based On Traffic Flow Simulation With Performance Comparison of Various Smart Traffic Lights Technologies
 
 To run the Jupyter Notebooks of this project click here --> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marcostfermin/Dynamic-Traffic-Lights-Simulation/main) (COMING SOON)
 

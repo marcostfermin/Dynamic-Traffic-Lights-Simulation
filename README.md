@@ -55,13 +55,23 @@ For reference, a short simulation time (1 hour) was run for each technology, and
 # References 
 
 [1] J. Jin, X. Ma, and I. Kosonen, “An intelligent control system for traffic lights with simulation-based evaluation,” Control Engineering Practice, vol. 58, pp. 24–33, 2017.
+
 [2] A. Joyo, R. Yaqub, and N. Madamopoulos, “Intelligent traffic-lights management by exploiting smart antenna technology (itsat),” IEEE Intelligent Transportation Systems Magazine, pp. 1–11, 2020.
+
 [3] R. Yaqub, A. Joyo, K. Heidary, and N. Madamopoulos, “Green-initiative for realizing adaptive traffic-signals by exploiting smart-antenna technology (greatest),” IEEE Intelligent Transportation Systems Magazine, vol. 12, no. 4, pp. 66–77, 2020.
+
 [4] M. A. Kamran, H. Ramezani, S. Masoumzadeh, and F. Nikkhoo, “Traffic light signal timing using simulation,” Communications on Advanced Computational Science with Applications, vol. 1, pp. 1–11, 2017.
+
 [5] B. Wee, J. Annema, and D. Banister, The transport system and transport policy: an introduction. Jan. 2013, p. 399, isbn: 9781781952047.
+
 [6] N. Gartner and D. Hou, “Comparative evaluation of alternative traffic control strategies,” Transportation Research Record Journal of the Transportation Research Board, vol. 1360, pp. 66–73, Dec. 1992.
+
 [7] K. Salimifard and M. Ansari, “Modeling and simulation of urban traffic signals,” International Journal of Modeling and Optimization, pp. 172–175, 2013.
+
 [8] E. Lieberman, A. K. Rathi, N. Gartner, and C. Messer, “Revised monograph on traffic flow theory,” U.S. Department of Transportation - Federal Highway Administration, vol. 1, pp. 1–25, 2001.
+
 [9] T. R. Board, E. National Academies of Sciences, and Medicine, Signal Timing Manual - Second Edition, T. Urbanik et al., Eds. Washington, DC: The National Academies Press, 2015. doi: 10.17226/22097. [Online]. Available: https://www.nap.edu/catalog/22097/signal-timing-manual-second-edition.
+
 [10] M. F. Rachmadi et al., “Adaptive traffic signal control system using camera sensor and embedded system,” TENCON 2011 - 2011 IEEE Region 10 Conference, pp. 1261–1265, 2011.
+
 [11] B. Zachariah, P. Ayuba, and L. P. Damuut, “Optimization of traffic light control system of an intersection using fuzzy inference system,” Science World Journal, vol. 12, no. 4, 2017.

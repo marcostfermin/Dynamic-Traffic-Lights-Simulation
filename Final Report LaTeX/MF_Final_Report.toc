@@ -1,0 +1,33 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Contributions and Outline}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Methodology}{4}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Graphical User Interface}{4}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Antenna Simulation}{6}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Python Code Explanation}{7}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Camera Simulation}{13}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Python Code Explanation}{14}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}PIR Simulation}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Python Code Explanation}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Results and Data Analysis}{27}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Conclusion}{30}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Future Work}{31}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}References}{32}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Appendix: Python Codes}{33}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Github}{33}{}%

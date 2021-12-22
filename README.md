@@ -1,7 +1,5 @@
 # Dynamic Traffic Lights Management System Based On Traffic Flow Simulation With Performance Comparison of Various Smart Traffic Lights Technologies
 
-To run the Jupyter Notebooks of this project click here --> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marcostfermin/Dynamic-Traffic-Lights-Simulation/main) (COMING SOON)
-
 The following capstone simulation project was done as a partial requirement to obtain the Bachelor of Engineering in Electrical Engineering from The City College of New York under the supervision of Prof. Dr. Mohamed Ali. 
 
 This project aims to create a traffic simulation where the Traffic Lights are dynamically controled based on the traffic density at a given intersection reducing congestion. The performance of three techonologies (High Speed Camera, PIR Sensor, and Smart Antenna) were compared to determine which technology is more efficient at reducing traffic congestion by focusing on the Average Waiting Time and Total Number of Cars Served at the intersection.
